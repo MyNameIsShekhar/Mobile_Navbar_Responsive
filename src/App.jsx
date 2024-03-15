@@ -1,14 +1,19 @@
 import React from 'react';
 import Header from "./Components/Header";
-import SearchSection from "./Components/SearchSection";
+import SearchSection from "./Components/SearchBar";
 
 const App = () => {
   return (
     <>
       <Header />
-      <SearchSection />
+      <div className="container mx-auto mt-8">
+      <h1 className="text-3xl font-semibold mb-4">Search Example</h1>
+      <SearchBar />
+      </div>
+
     </>
   );
 };
+
 
 export default App;
