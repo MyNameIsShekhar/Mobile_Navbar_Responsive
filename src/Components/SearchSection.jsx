@@ -1,10 +1,9 @@
-
 import React, { useState } from 'react';
 import axios from 'axios';
 
 const SearchSection = () => {
   const [keyword, setKeyword] = useState('');
-  const [searchResult, setSearchResult] = useState(null);
+  const [searchResult, setSearchResult] = useState([]);
 
   const handleSearch = async () => {
     try {
@@ -41,7 +40,7 @@ const SearchSection = () => {
             </svg>
           </button>
         </div>
-        {searchResult && (
+        {searchResult.length > 0 && (
           <div className="mt-4">
             <h3 className="text-lg font-bold mb-2">Search Result</h3>
             <ul>
