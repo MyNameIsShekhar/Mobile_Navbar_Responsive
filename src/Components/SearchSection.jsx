@@ -33,7 +33,7 @@ const SearchSection = () => {
           />
           <button 
             className="flex items-center justify-center bg-blue-500 text-white rounded-md p-2" 
-            onClick={handleSearch}
+            onClick={handleSearch} // This line ensures the function is called on button click
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M10 0a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM8.62 14.563a6.929 6.929 0 1 1 4.939-2.049 6.886 6.886 0 0 1-4.939 2.049z" clipRule="evenodd" />
