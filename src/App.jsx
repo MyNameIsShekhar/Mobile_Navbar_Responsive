@@ -1,19 +1,17 @@
 import React from 'react';
-import Header from "./Components/Header";
-import SearchBar from "./Components/SearchBar";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import SearchBar from './components/SearchBar';
+import SearchPage from './components/SearchPage';
 
-const App = () => {
+function App() {
   return (
-    <>
-      <Header />
-      <div className="container mx-auto mt-8">
-      <h1 className="text-3xl font-semibold mb-4">Search Example</h1>
-      <SearchBar />
-      </div>
-
-    </>
+    <Router>
+      <Switch>
+        <Route path="/" exact component={SearchBar} />
+        <Route path="/search" component={SearchPage} />
+      </Switch>
+    </Router>
   );
-};
-
+}
 
 export default App;
