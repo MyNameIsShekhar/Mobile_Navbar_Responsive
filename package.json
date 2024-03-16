@@ -9,7 +9,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "keywords": ["react", "tailwindcss", "search", "keyword"], // Added "search" and "keyword"
+  "keywords": ["react", "tailwindcss", "search", "keyword"],
   "author": "Your Name",
   "license": "MIT",
   "dependencies": {
